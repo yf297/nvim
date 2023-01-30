@@ -6,7 +6,7 @@ sudo apt install fuse wget git
 ```
 Install [Neovim](https://github.com/neovim/neovim)
 
-``
+```
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 ```
 Rename nvim.appimage to nvim, make it executable and move it to /usr/bin
