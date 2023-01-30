@@ -1,8 +1,8 @@
-Install things that will be used to install other things
+Install things that will be used to install other things. Also python3 and R
 
 ```
 sudo apt update
-sudo apt install fuse wget git
+sudo apt install fuse wget git python3 R
 ```
 Install [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim) appimage
 
@@ -30,8 +30,24 @@ Clone this repo into a .config directory
 git clone https://github.com/yf297/nvim.git ~/.config
 ```
 
-cd into ~/.config/nvim/lua/config and write open plugins.lua. Then run
+cd into ~/.config/nvim/lua/config and open plugins.lua. Then run
 ```
 :PackerSync
+```
+
+We need to install some language servers. For R you can use
+```
+install.packages("languageserver")
+```
+
+For python first install the pip3 package manager then use it to install pyright
+```
+sudo apt install python3-pip
+pip3 install pyright
+```
+
+If you want support for C/C++, install clangd
+```
+sudo apt install clangd
 ```
 
