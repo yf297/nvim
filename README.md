@@ -4,7 +4,7 @@ Install things that will be used to install other things
 sudo apt update
 sudo apt install fuse wget git
 ```
-Install [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+Install [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim) appimage
 
 ```
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
@@ -24,8 +24,14 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
  ```
 
-Make directory to store files
+Clone this repo into a .config directory 
+
 ```
-mkdir -p .config
+git clone https://github.com/yf297/nvim.git ~/.config
+```
+
+cd into ~/.config/nvim/lua/config and write open plugins.lua. Then run
+```
+:PackerSync
 ```
 
