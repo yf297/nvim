@@ -2,7 +2,7 @@ Install things that will be used to install other things. Also python3 and R
 
 ```
 sudo apt update
-sudo apt install fuse wget git python3 R
+sudo apt install fuse wget git python3 r-base
 ```
 Install [Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim) appimage
 
